@@ -13,11 +13,11 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 :root{
-  --bg:#fcfaf5;
-  --hero-bg:#f5f2eb;
-  --card1:#f0ede6;--card2:#ede9e2;--card3:#eae6df;
+  --bg:#fdfcf9;
+  --hero-bg:#f8f6f1;
+  --card1:#f3f1ec;--card2:#f0eee9;--card3:#edebe6;
   --text:#3c3730;--sub:#a09888;--light:#c8c0b4;
-  --border:#e8e4dc;
+  --border:#ece9e3;
 }
 body{font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Helvetica Neue','Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
 
@@ -47,17 +47,15 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:1.2rem
 .grid{max-width:1200px;margin:0 auto;padding:1.5rem 2.5rem;display:grid;grid-template-columns:1fr 1fr;gap:.5rem}
 .grid-item{border-radius:4px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-decoration:none;color:var(--text);transition:all .35s ease;cursor:pointer;position:relative;overflow:hidden}
 .grid-item:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(0,0,0,.06)}
-.grid-item .item-emoji{font-size:2.8rem;margin-bottom:1rem}
-.grid-item .item-name{font-size:1.2rem;font-weight:700;margin-bottom:.3rem}
-.grid-item .item-en{font-size:.72rem;color:var(--light);margin-bottom:.5rem}
-.grid-item .item-desc{font-size:.75rem;color:var(--sub);text-align:center;line-height:1.5}
+.grid-item .item-name{font-size:1.15rem;font-weight:700;margin-bottom:.3rem}
+.grid-item .item-en{font-size:.68rem;color:var(--light);margin-bottom:.5rem;letter-spacing:.5px}
+.grid-item .item-desc{font-size:.75rem;color:var(--sub);line-height:1.6}
 .grid-item .item-arrow{position:absolute;top:1rem;right:1.2rem;font-size:.9rem;color:var(--light);transition:color .2s}
 .grid-item:hover .item-arrow{color:var(--text)}
-.grid-item .item-num{position:absolute;top:1rem;left:1.2rem;font-size:.7rem;font-weight:700;color:var(--light)}
 
 /* Item sizes */
-.item-tall{grid-row:span 2;padding:3rem 1.5rem;min-height:340px;background:var(--card1)}
-.item-short{padding:2rem 1.5rem;min-height:160px}
+.item-tall{grid-row:span 2;padding:3rem 2rem;min-height:340px;background:var(--card1);align-items:flex-start;justify-content:center}
+.item-short{padding:2rem 2rem;min-height:160px;align-items:flex-start;justify-content:center}
 .item-r1{background:var(--card2)}
 .item-r2{background:var(--card3)}
 .item-full{grid-column:span 2;padding:2rem 1.5rem;min-height:120px;background:var(--border);flex-direction:row;gap:2rem}
@@ -138,9 +136,7 @@ footer{border-top:1px solid var(--border);max-width:1200px;margin:2rem auto 0;pa
 <div class="grid">
   <!-- 求学地图 — tall left -->
   <a class="grid-item item-tall" href="/study-abroad-guide/">
-    <span class="item-num">01</span>
     <span class="item-arrow">↗</span>
-    <span class="item-emoji">🌍</span>
     <span class="item-name">求学地图</span>
     <span class="item-en">EduMap</span>
     <span class="item-desc">全球343所名校<br>26个国家 · 中英双语</span>
@@ -148,29 +144,25 @@ footer{border-top:1px solid var(--border);max-width:1200px;margin:2rem auto 0;pa
 
   <!-- 高考GPS — short right top -->
   <a class="grid-item item-short item-r1" href="/gaokao-guide/">
-    <span class="item-num">02</span>
     <span class="item-arrow">↗</span>
-    <span class="item-emoji">🎯</span>
     <span class="item-name">高考GPS</span>
+    <span class="item-en">GaokaoGPS</span>
     <span class="item-desc">31省 · 151所院校</span>
   </a>
 
   <!-- 塔罗 — short right bottom -->
   <a class="grid-item item-short item-r2" href="/tarot-daily/">
-    <span class="item-num">03</span>
     <span class="item-arrow">↗</span>
-    <span class="item-emoji">🔮</span>
     <span class="item-name">塔罗能量站</span>
+    <span class="item-en">Tarot Energy</span>
     <span class="item-desc">每日一签 · 心事求签</span>
   </a>
 
   <!-- Coming soon -->
   <a class="grid-item item-ghost" href="#">
-    <span class="item-emoji">💡</span>
     <span class="item-name">Coming Soon</span>
   </a>
   <a class="grid-item item-ghost" href="#">
-    <span class="item-emoji">✨</span>
     <span class="item-name">Stay Tuned</span>
   </a>
 </div>
